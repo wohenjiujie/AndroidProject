@@ -5,7 +5,7 @@ public class JavaTest {
 //        new a();
 //        A aliment = new A();
 //        System.out.println(A.a);
-        System.out.println("sssadsfaf");
+        System.out.println("xnomore");
 
 }}
 
