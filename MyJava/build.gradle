@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/End of the operation 4.0.jar')
+    implementation files('libs/电科-20161060186-李恩泽.jar')
+    implementation files('libs/第一周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第七周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第三周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第二周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第五周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第八周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第十周-20161060186-李恩泽-电科班.jar')
+    implementation files('libs/第四周-20161060186-李恩泽-电科班.jar')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

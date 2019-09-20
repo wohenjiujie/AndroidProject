@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28 // sdk version
+    defaultConfig {
+        applicationId "com.example.myandroid"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false //是否开启代码混淆
+
+            //指定代码混淆规则文件的文件名
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //指定引用jar包的路径
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //指定编译Android的高版本支持库
+    implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta1'
+
+    testImplementation 'junit:junit:4.13-beta-3'
+    //指定单元测试编译用的junit版本号
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

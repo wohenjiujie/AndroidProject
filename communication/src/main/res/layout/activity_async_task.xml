@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".AsyncTaskActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/at_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="请选择要加载的小说 "
+            android:textSize="17sp" />
+
+        <Spinner
+            android:id="@+id/at_sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/at_tv"
+            android:gravity="left|center"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/at_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:id="@+id/at_async"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="这里查看加载进度"
+        android:textSize="17sp" />
+
+</LinearLayout>

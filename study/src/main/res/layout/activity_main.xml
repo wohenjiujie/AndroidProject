@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/radio_btn"
+            android:text="RadioButton"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/et_btn"
+            android:text="EditText"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/cb_btn"
+            android:text="CheckBox"
+            android:textAllCaps="false"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/lv_btn"
+            android:text="ListView"
+            android:textAllCaps="false" />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/line_2"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/line_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/gv_btn"
+            android:text="GridView"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/rv_btn"
+            android:text="RecyclerView"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/toast_btn"
+            android:text="ToastView"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/dialog_btn"
+            android:text="AlertDialog"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/line_2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/pb_btn"
+            android:text="ProgressBar"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_selector_pressed_orange"
+            android:id="@+id/popwindow_btn"
+            android:text="PopWindow"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</RelativeLayout>

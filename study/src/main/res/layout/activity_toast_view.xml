@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.study.ToastViewActivity">
+
+    <Button
+        android:id="@+id/toast_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="default" />
+
+    <Button
+        android:id="@+id/toast_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="location" />
+
+    <Button
+        android:id="@+id/toast_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="diy" />
+
+    <Button
+        android:id="@+id/toast_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="package" />
+
+</LinearLayout>

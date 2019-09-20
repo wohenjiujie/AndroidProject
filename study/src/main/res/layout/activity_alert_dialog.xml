@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.example.study.AlertDialogActivity">
+
+    <ProgressBar
+        android:id="@+id/pb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:max="100"/>
+
+    <ProgressBar
+        android:id="@+id/pb_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/MyProgressBarStyle"
+        android:max="100"/>
+
+
+    <Button
+        android:id="@+id/dialog_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="默认样式"/>
+    <Button
+        android:id="@+id/dialog_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单选样式"/>
+    <Button
+        android:id="@+id/dialog_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="radioButton样式"/>
+    <Button
+        android:id="@+id/dialog_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多选样式"/>
+    <Button
+        android:id="@+id/dialog_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义样式"/>
+
+</LinearLayout>

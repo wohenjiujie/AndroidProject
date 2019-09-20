@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StretchActivity">
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        app:layout_constraintBottom_toTopOf="@+id/fitxy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/jpegwall" />
+
+    <Button
+        android:id="@+id/fitstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="fitstart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fitcenter" />
+
+    <Button
+        android:id="@+id/fitxy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="fitxy"
+        app:layout_constraintBottom_toTopOf="@+id/centercrop"
+        app:layout_constraintStart_toEndOf="@+id/center" />
+
+    <Button
+        android:id="@+id/fitcenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fitxcenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wallpaper" />
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="center"
+        app:layout_constraintStart_toEndOf="@+id/fitcenter"
+        app:layout_constraintTop_toBottomOf="@+id/wallpaper" />
+
+    <Button
+        android:id="@+id/centercrop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="centercrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fitstart" />
+
+    <Button
+        android:id="@+id/centerinside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="1dp"
+        android:text="centerinside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/centercrop" />
+
+    <Button
+        android:id="@+id/fitend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:text="fitend"
+        app:layout_constraintStart_toEndOf="@+id/fitxy"
+        app:layout_constraintTop_toBottomOf="@+id/wallpaper" />
+
+</android.support.constraint.ConstraintLayout>

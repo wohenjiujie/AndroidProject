@@ -1,0 +1,1 @@
+include ':app', ':MyJava', ':CSP', ':middle', ':startapp', ':senior', ':storage', ':myandroid', ':study', ':myplanttest', ':communication', 'arcface', 'arc', 'TraceDemo', ':junior', ':device'
