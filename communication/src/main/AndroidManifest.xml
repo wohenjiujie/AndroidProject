@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.invo.communication">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IntentServiceActivity"></activity>
+        <activity android:name=".ServiceRemoteActivity"></activity>
+        <activity android:name=".IntentServiceActivity" />
         <activity android:name=".AsyncTaskActivity" />
         <activity android:name=".MessageActivity" />
         <activity android:name=".MainActivity">
@@ -22,8 +21,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".service.AsyncService" android:enabled="true" />
-
+        <service
+            android:name=".service.AsyncService"
+            android:enabled="true" />
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

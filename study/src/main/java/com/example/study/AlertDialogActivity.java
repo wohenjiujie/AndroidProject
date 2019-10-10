@@ -41,6 +41,12 @@ public class AlertDialogActivity extends AppCompatActivity {
             switch (v.getId()) {
                 case R.id.dialog_1:
                     //默认样式
+
+                    /*
+                    * ：AlertDialog创建语句public AlertDialog.Builder (Context context)中
+                    * 不能使用getApplicationContext()得到的context，而必须使用Activity
+                    *将 new AlertDialog.Builder(getApplicationContext()) 改为 new AlertDialog.Builder(xx.this)
+                    * */
                     AlertDialog.Builder mBuilder1 = new AlertDialog.Builder(AlertDialogActivity.this);
                     mBuilder1.setTitle("diy1").setMessage("diy1").setIcon(R.drawable.mood_smile)
                             .setNegativeButton("diy1", new DialogInterface.OnClickListener() {
@@ -88,7 +94,7 @@ public class AlertDialogActivity extends AppCompatActivity {
                                 public void onClick(DialogInterface dialog, int which) {
                                     ToastUtil.showToast(getApplicationContext(), notification[which]);
                                 }
-                            }).setCancelable(false).show();
+                            }).setCancelable(true).show();
                     break;
                 case R.id.dialog_4:
                     //多选

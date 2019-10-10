@@ -29,8 +29,8 @@ public class PopWindowActivity extends AppCompatActivity {
                 view.getLocationOnScreen(location);
 //                popupWindow.showAtLocation(v, Gravity.NO_GRAVITY, (location[0]+v.getWidth()/2)-popupWidth/2,
 //                        location[1]-popupHeight);
-                popupWindow.showAtLocation(v, Gravity.NO_GRAVITY, (location[0]+v.getWidth()/2)-popupWidth/2,
-                        location[1]-popupHeight);
+                /*popupWindow.showAtLocation(v, Gravity.NO_GRAVITY, (location[0]+v.getWidth()/2)-popupWidth/2,
+                        location[1]-popupHeight);*/
             }
         });
     }

@@ -32,6 +32,13 @@
         android:layout_height="60dp"
         android:text="IntentService"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/service_test"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:text="Service_test"
+        android:textAllCaps="false"/>
 </LinearLayout>
 
 </LinearLayout>
